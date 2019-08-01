@@ -10,7 +10,7 @@ import io
 coachman_surveyid = ["SV_1Y6KITcfdDhDxzf","SV_5AXohDSPN0nRFzv","SV_3XmGCUidoKUB6Yd","SV_86vGUl5C11oL2Yd",
                      "SV_3dZm5NnigVR35n7","SV_7PdiL93lIhl1n37"]
 #Intervention survey ids
-techsupport_surveyid = ["SV_bQNtPmy7DLiJMR7","SV_d7pEOjmSwoaOyl7","SV_1RMYw7EF1Xjnkr3","SV_9HRkRYLyvMDueC9",
+techsupport_surveyidI = ["SV_bQNtPmy7DLiJMR7","SV_d7pEOjmSwoaOyl7","SV_1RMYw7EF1Xjnkr3","SV_9HRkRYLyvMDueC9",
                         "SV_b8ZNGcVEiYZbxjv","SV_0TmZRjJFTfHYdhP","SV_0IzHtl6hEhDSTIh",
                         "SV_9KrN32YcytCuZPn","SV_0HhLMRamxhwLI5D","SV_3dADbHE1XIFsUmh","SV_9zaWaPKj2aX6YHr",
                         "SV_0AmO4LTg8l59xfD"]
@@ -19,7 +19,7 @@ techsupport_surveyid = ["SV_bQNtPmy7DLiJMR7","SV_d7pEOjmSwoaOyl7","SV_1RMYw7EF1X
 techsupport_surveyidC = ["SV_5mr1oIM6xbyP1CB","SV_aaOLypw2xdJAvch","SV_3jxd6fUaExvzg3j","SV_es4qEccWBqj92IJ",
                          "SV_e4A1l3Z19TRDgzj","SV_9ZCeivMpURLjglT"]
 # Setting user Parameters
-apiToken = "95bAIgMDf1rsUSULPBI48EVEiEu9fBsM0ynIrw9Y"
+apiToken = "OW5GjJt2G5Q3yqqPQHeHW6EGQg3BDSoIZuPBqqXx"
 
 #surveyId = techsupport_surveyid
 fileFormat = "csv"
@@ -45,6 +45,7 @@ for surveyId in techsupport_surveyidC:
     # Step 2: Checking on Data Export Progress and waiting until export is ready
 
     isFile = None
+    #print("download req payload: "+ str(downloadRequestPayload))
 
     while requestCheckProgress < 100 and progressStatus is not "complete" and isFile is None:
         requestCheckUrl = baseUrl + progressId
@@ -55,12 +56,12 @@ for surveyId in techsupport_surveyidC:
         else:
             print  "file created:", requestCheckResponse.json()["result"]["file"]
         requestCheckProgress = requestCheckResponse.json()["result"]["percentComplete"]
-        print "Download is " + str(requestCheckProgress) + " complete"
+        #print "Download is " + str(requestCheckProgress) + " complete"
 
     # Step 3: Downloading file
     requestDownloadUrl = baseUrl + progressId + '/file'
     requestDownload = requests.request("GET", requestDownloadUrl, headers=headers, stream=True)
-
+    #print ("req download: "+ str(requestDownload))
 # Step 4: Unzipping the file
     zipfile.ZipFile(io.BytesIO(requestDownload.content)).extractall("MyQualtricsDownload")
     print('Complete')
