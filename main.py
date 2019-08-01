@@ -19,8 +19,7 @@ techsupport_surveyidI = ["SV_bQNtPmy7DLiJMR7","SV_d7pEOjmSwoaOyl7","SV_1RMYw7EF1
 techsupport_surveyidC = ["SV_5mr1oIM6xbyP1CB","SV_aaOLypw2xdJAvch","SV_3jxd6fUaExvzg3j","SV_es4qEccWBqj92IJ",
                          "SV_e4A1l3Z19TRDgzj","SV_9ZCeivMpURLjglT"]
 # Setting user Parameters
-apiToken = "OW5GjJt2G5Q3yqqPQHeHW6EGQg3BDSoIZuPBqqXx"
-
+apiToken = raw_input("Enter token")
 #surveyId = techsupport_surveyid
 fileFormat = "csv"
 dataCenter = 'cwru.az1'
