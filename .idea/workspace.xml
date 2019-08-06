@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b5ed89a6-d52e-4646-9569-6c36848f257d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanData.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleanData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,50 +24,50 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="csv" value="1" />
-          <entry key="py" value="3" />
+          <entry key="csv" value="2" />
+          <entry key="py" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="1" />
-          <entry key="Python" value="3" />
+          <entry key="PLAIN_TEXT" value="2" />
+          <entry key="Python" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="254" />
-          <entry key="dummy" value="18" />
-          <entry key="py" value="1070" />
+          <entry key="Python Console" value="488" />
+          <entry key="dummy" value="22" />
+          <entry key="py" value="2900" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="18" />
-          <entry key="Python" value="1324" />
+          <entry key="PLAIN_TEXT" value="22" />
+          <entry key="Python" value="3388" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+            <state relative-caret-position="137">
+              <caret line="25" selection-start-line="25" selection-end-line="25" />
               <folding>
-                <element signature="e#14#29#0" expanded="true" />
+                <element signature="e#12#27#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cleanData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+            <state relative-caret-position="144">
+              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -83,6 +84,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>_end</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -93,12 +99,14 @@
         <option value="$PROJECT_DIR$/mergeData.py" />
         <option value="$PROJECT_DIR$/cleanData.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/new_main.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="830" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -112,6 +120,37 @@
             <path>
               <item name="PatientReminder" type="b2602c69:ProjectViewProjectNode" />
               <item name="PatientReminder" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PatientReminder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PatientReminder" type="462c0819:PsiDirectoryNode" />
+              <item name="MyQualtricsDownload" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PatientReminder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PatientReminder" type="462c0819:PsiDirectoryNode" />
+              <item name="MyQualtricsDownload" type="462c0819:PsiDirectoryNode" />
+              <item name="Coachman" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PatientReminder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PatientReminder" type="462c0819:PsiDirectoryNode" />
+              <item name="MyQualtricsDownload" type="462c0819:PsiDirectoryNode" />
+              <item name="TechSupport" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PatientReminder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PatientReminder" type="462c0819:PsiDirectoryNode" />
+              <item name="MyQualtricsDownload" type="462c0819:PsiDirectoryNode" />
+              <item name="TechSupport" type="462c0819:PsiDirectoryNode" />
+              <item name="Controlled" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PatientReminder" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PatientReminder" type="462c0819:PsiDirectoryNode" />
+              <item name="MyQualtricsDownload" type="462c0819:PsiDirectoryNode" />
+              <item name="TechSupport" type="462c0819:PsiDirectoryNode" />
+              <item name="Intervention" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -135,7 +174,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.new_main">
     <configuration name="dummy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PatientReminder" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -199,13 +238,36 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="new_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PatientReminder" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Python.dummy" />
       <item itemvalue="Python.mergeData" />
       <item itemvalue="Python.main" />
+      <item itemvalue="Python.new_main" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.new_main" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.mergeData" />
         <item itemvalue="Python.dummy" />
@@ -227,13 +289,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16595136" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31759655" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.46506023" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -261,22 +324,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cleanData.py">
+    <entry file="file://$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Intervention/TechSuPPorT_-_HTN_-_Week_1 + INTRO.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        <state relative-caret-position="-385" />
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/zipfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-24">
+          <caret line="810" selection-start-line="810" selection-end-line="810" />
           <folding>
-            <element signature="e#0#9#0" expanded="true" />
+            <element signature="e#34#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+        <state relative-caret-position="106">
+          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="22" selection-end-column="12" />
           <folding>
             <element signature="e#14#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="137">
+          <caret line="25" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#12#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cleanData.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
