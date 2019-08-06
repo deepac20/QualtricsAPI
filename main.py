@@ -9,7 +9,7 @@ import sys
 # Setting user Parameters
 
 
-apiToken = 'oMiWmstOKnqYoUj1k3mFHWE1VVCrxCmO03VjhLNR'
+apiToken = raw_input('Enter token: ')
 
 
 
