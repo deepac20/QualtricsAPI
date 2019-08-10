@@ -2,61 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5ed89a6-d52e-4646-9569-6c36848f257d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/Coachman/Controlled/HTN Week 2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/Coachman/Intervention/HTN  Week 1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/Coachman/Intervention/HTN Week 2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/Coachman/Intervention/HTN Week 3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/Coachman/Intervention/HTN Week 4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/Coachman/Intervention/HTN Week 5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/Coachman/Intervention/HTN Week 6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Controlled/TechSuPPorT_-_HTN_-_Week_1 + INTRO.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Controlled/TechSuPPorT_-_HTN_-_Week_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Controlled/TechSuPPorT_-_HTN_-_Week_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Controlled/TechSuPPorT_-_HTN_-_Week_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Controlled/TechSuPPorT_-_HTN_-_Week_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Controlled/TechSuPPorT_-_HTN_-_Week_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Intervention/TechSuPPorT_-_HTN_-_Week_1 + INTRO.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Intervention/TechSuPPorT_-_HTN_-_Week_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Intervention/TechSuPPorT_-_HTN_-_Week_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Intervention/TechSuPPorT_-_HTN_-_Week_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Intervention/TechSuPPorT_-_HTN_-_Week_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Intervention/TechSuPPorT_-_HTN_-_Week_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Intervention/TechSuPPorT_-_PPT_-_Week_1 + Intro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Intervention/TechSuPPorT_-_PPT_-_Week_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Intervention/TechSuPPorT_-_PPT_-_Week_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Intervention/TechSuPPorT_-_PPT_-_Week_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Intervention/TechSuPPorT_-_PPT_-_Week_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyQualtricsDownload/TechSupport/Intervention/TechSuPPorT_-_PPT_-_Week_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_HTN_-_Week_1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_HTN_-_Week_1_sub.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_HTN_-_Week_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_HTN_-_Week_2_sub.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_HTN_-_Week_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_HTN_-_Week_3_sub.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_HTN_-_Week_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_HTN_-_Week_4_sub.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_HTN_-_Week_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_HTN_-_Week_5_sub.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_HTN_-_Week_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_HTN_-_Week_6_sub.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_PPT_-_Week_1 + Intro.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_PPT_-_Week_1 + Intro_sub.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_PPT_-_Week_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_PPT_-_Week_2_sub.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_PPT_-_Week_3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_PPT_-_Week_3_sub.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_PPT_-_Week_4.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_PPT_-_Week_4_sub.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_PPT_-_Week_5.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_PPT_-_Week_5_sub.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_PPT_-_Week_6.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TechSupport Intervention/A_-_PPT_-_Week_6_sub.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/copu/controlled/TechSuPPorT_-_HTN_-_Week_1 + INTRO - Copy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/copu/controlled/TechSuPPorT_-_HTN_-_Week_2 - Copy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/copu/controlled/TechSuPPorT_-_HTN_-_Week_3 - Copy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/copu/controlled/TechSuPPorT_-_HTN_-_Week_4 - Copy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/copu/controlled/TechSuPPorT_-_HTN_-_Week_5 - Copy.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/copu/controlled/TechSuPPorT_-_HTN_-_Week_6 - Copy.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanData.py" beforeDir="false" afterPath="$PROJECT_DIR$/cleanData.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -89,15 +35,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="Python Console" value="488" />
+          <entry key="Python Console" value="497" />
           <entry key="dummy" value="22" />
-          <entry key="py" value="2918" />
+          <entry key="py" value="3237" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="PLAIN_TEXT" value="22" />
-          <entry key="Python" value="3406" />
+          <entry key="Python" value="3734" />
         </counts>
       </usages-collector>
     </session>
@@ -107,10 +53,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="217">
+              <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
               <folding>
                 <element signature="e#12#27#0" expanded="true" />
+                <marker date="1565274879201" expanded="true" signature="196:2416" ph="..." />
               </folding>
             </state>
           </provider>
@@ -119,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cleanData.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+            <state relative-caret-position="240">
+              <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -150,8 +97,8 @@
       <list>
         <option value="$PROJECT_DIR$/dummy.py" />
         <option value="$PROJECT_DIR$/mergeData.py" />
-        <option value="$PROJECT_DIR$/cleanData.py" />
         <option value="$PROJECT_DIR$/new_main.py" />
+        <option value="$PROJECT_DIR$/cleanData.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -196,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.new_main">
+  <component name="RunManager" selected="Python.mergeData">
     <configuration name="dummy" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PatientReminder" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -289,9 +236,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.new_main" />
-        <item itemvalue="Python.main" />
         <item itemvalue="Python.mergeData" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.new_main" />
         <item itemvalue="Python.dummy" />
       </list>
     </recent_temporary>
@@ -313,12 +260,12 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31759655" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31759655" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.46506023" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46506023" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -373,8 +320,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cleanData.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="35" selection-end-line="18" selection-end-column="35" />
+        <state relative-caret-position="240">
+          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
@@ -383,10 +330,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        <state relative-caret-position="217">
+          <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
           <folding>
             <element signature="e#12#27#0" expanded="true" />
+            <marker date="1565274879201" expanded="true" signature="196:2416" ph="..." />
           </folding>
         </state>
       </provider>
