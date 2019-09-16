@@ -2,25 +2,127 @@ import os
 import glob
 import pandas as pd
 
-dir = os.getcwd()
-os.chdir(dir + "/MyQualtricsDownload/TechSupport/Intervention")
-extension = "csv"
 
-all_filenames = [i for i in glob.glob('*.{}'.format(extension))]
+def rename_files():
+    for i, file in enumerate(all_file_names):
+        module = "HTN" in file and "HTN" or "PPT"
+        if module == "HTN":
+            file_name = file.replace("TechSuPPorT_-_HTN_-_", 'HTN_')
+        else:
+            file_name = file.replace("TechSuPPorT_-_PPT_-_", 'PPT_')
+        file_name = file_name.replace(' + INTRO', '')
+        file_name = file_name.replace(' + Intro', '')
+        os.rename(file, file_name)
+        all_file_names[i] = file_name
+        week = [x.isdigit() for x in file_name].index(True)
+        df = pd.read_csv(file_name)
+        df['Module'] = module
+        df['Week'] = file_name[week]
+        # remove duplicate row (header and first row were same)
+        df = df.drop(df.index[[0, 1]], axis=0)
+        df_subset = df[df.Status == '0']  # remove rows with Status = 1
+        # creating subset of data
+        col = ['Module', 'Week', 'StartDate', 'EndDate', 'RecipientFirstName', 'RecipientLastName', 'RecipientEmail',
+               'Status','Progress', 'Finished', 'Duration (in seconds)', 'LocationLatitude', 'LocationLongitude']
+        df_subset = df_subset[col]
+        # remove rows for which names are empty
+        df_subset = df_subset[~df_subset['RecipientFirstName'].isnull()]
+        df_subset.to_csv(file_name, index=False)
 
-for i,file in enumerate(all_filenames):
-    module = "HTN" in file and "HTN" or "PPT"
-    fname = file.replace("TechSuPPort_-HTN_-_",'')
-    fname = fname.replace(' + INTRO','')
-    os.rename(file,fname)
-    all_filenames[i] = fname
-    week = fname[5:6]
-    df = pd.read_csv(fname)
-    df['Module'] = module
-    df['Week'] = week
-    df = df.drop(df.index[[0,1]],axis=0)
-    df_subset = df[['Module','Week','ResponseID','StartDate','EndDate','RecipientFirstName','RecipientLastName','RecipientEmail','Finished','Status']]
-    df_subset = df_subset[df_subset.Status == '0']
-    fsub = fname.strip(".csv")
-    fsub = fsub + "_sub.csv"
-    df_subset.to_csv(fsub,index=False)
+
+def merge_files():
+    all_data = pd.DataFrame()
+    for file in all_file_names:
+        data = pd.read_csv(file)
+        all_data = all_data.append(data, sort=False)
+    print(os.getcwd())
+    all_data.to_csv("Combined.csv", index=False)
+
+
+def remove_duplicates():
+    data = pd.read_csv("Combined.csv")
+    data['StartDate'] = pd.to_datetime(data['StartDate'])
+    new_data = pd.DataFrame()
+    pd.set_option('display.max_columns', 30)
+    for email in set(data['RecipientEmail']):
+        df = data.loc[data['RecipientEmail'] == email]
+        weeks = set(df['Week'])
+        modules = set(df['Module'])
+        c = list(df.columns)
+        c.remove('LocationLatitude')
+        c.remove('LocationLongitude')
+        for module in modules:
+
+            for week in weeks:
+                subset = df.loc[(df['Module'] == module) & (df['Week'] == week)]
+                if subset.shape[0] == 1:
+                    new_data = new_data.append(subset)
+
+                else:
+                    if subset.loc[subset['Finished'] == 1].shape[0] == 1:
+                        new_data = new_data.append(subset.loc[subset['Finished'] == 1])
+                    elif subset.loc[subset['Finished'] == 1].shape[0] > 1:
+                        s_subset = subset.loc[subset['Finished'] == 1]
+                        max_date = max(list(s_subset['StartDate']))
+                        new_data = new_data.append(s_subset.loc[s_subset['StartDate'] == max_date])
+                    elif subset.loc[subset['Finished']==0].shape[0] == 1:
+                        new_data = new_data.append(subset.loc[subset['Finished'] == 0])
+                    else:
+                        s_subset = subset.loc[subset['Finished'] == 0]
+                        dates = list(pd.to_datetime(s_subset['StartDate']))
+                        if len(dates) != 0:
+                            max_date = max(list(pd.to_datetime(s_subset['StartDate'])))
+                            new_data = new_data.append(s_subset.loc[s_subset['StartDate'] == max_date])
+    new_data.to_csv("Cleaned.csv", index=False)
+
+def get_id(Study,group):
+    if group == 'Intervention':
+        all_modules = ['HTN 1','HTN 2','HTN 3','HTN 4','HTN 5','HTN 6','PPT 1','PPT 2','PPT 3','PPT 4','PPT 5','PPT 6',]
+    else:
+        all_modules = ['HTN 1', 'HTN 2', 'HTN 3', 'HTN 4', 'HTN 5', 'HTN 6']
+    log = [[]]
+    data = pd.read_csv("Cleaned.csv")
+    for email in set(data['RecipientEmail']):
+        temp=[None]*2
+        completed_module=[]
+        subset = data.loc[data['RecipientEmail'] == email]
+        pname = str(subset['RecipientFirstName']).split()[1] + " " + str(subset['RecipientLastName']).split()[1]
+        #print("For {}: \n".format(pname))
+        for module in subset['Module']:
+            for week in subset['Week']:
+                module_week = module +" " +str(week)
+                completed_module.append(module_week)
+        completed_module=set(completed_module)
+        incomplete_modules = list(set(all_modules) - set(completed_module))
+        #print(incomplete_modules)
+        temp[0] = pname
+        if len(incomplete_modules) == 0:
+            temp[1] = "None"
+        else:
+            temp[1]= incomplete_modules
+        log.append(temp)
+    out = pd.DataFrame(log)
+    out.columns = ['Patient Name','Incomplete Modules']
+    print(out)
+    dest = path + "/{}_{}".format(Study,group) + ".csv"
+    out.to_csv(dest, index=False)
+
+global all_file_names
+global path
+# def setPath():
+choice = input("Enter 1 for TechSupport and 2 for Coachman: ")
+if choice == 1:
+    Study="TechSupport"
+elif choice == 2:
+    Study = "Coachman"
+else:
+    print("Invalid choice")
+path = os.getcwd()
+for Group in ['Intervention','Controlled']:
+    os.chdir(path + "/MyQualtricsDownload/{}/{}".format(Study, Group))
+    extension = "csv"
+    all_file_names = [i for i in glob.glob('*.{}'.format(extension))]
+    rename_files()
+    merge_files()
+    remove_duplicates()
+    get_id(Study,Group)
