@@ -1,0 +1,6 @@
+Module,Week,StartDate,EndDate,RecipientFirstName,RecipientLastName,RecipientEmail,Status,Progress,Finished,Duration (in seconds),LocationLatitude,LocationLongitude
+HTN,4,2019-04-01 23:29:25,2019-04-01 23:30:29,Tiketa,Dawson,Misstee0327@gmail.com,0,43,0,63,,
+HTN,4,2019-04-29 15:46:23,2019-04-29 15:53:15,Maryam,Muhammad,tarblooder93@yahoo.com,0,100,1,412,40.0178070068359375,-82.977996826171875
+HTN,4,2019-05-14 00:14:24,2019-05-14 02:24:53,Cathrine,Hamilton,veejames2@yahoo.com,0,100,1,7828,42.2422027587890625,-83.18070220947265625
+HTN,4,2019-05-17 17:15:40,2019-05-17 17:22:34,Authorine,McKnight-Solomon,rinimck@gmail.com,0,100,1,414,39.6992950439453125,-104.88140106201171875
+HTN,4,2019-05-23 00:51:27,2019-05-23 00:58:10,Bridgette,Billingslea,bbillin3@kent.edu,0,100,1,402,41.5635986328125,-81.57330322265625

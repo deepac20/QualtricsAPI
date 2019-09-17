@@ -1,0 +1,4 @@
+Module,Week,StartDate,EndDate,RecipientFirstName,RecipientLastName,RecipientEmail,Status,Progress,Finished,Duration (in seconds),LocationLatitude,LocationLongitude
+HTN,5,2019-05-21 18:57:21,2019-05-21 19:04:45,James,Gordon,jamesgordon1941@gmail.com,0,54,0,443,,
+HTN,5,2019-06-10 18:06:17,2019-06-10 18:24:55,Leathea,Robinson,lea.robinson@hotmail.com,0,100,1,1117,41.0796051025390625,-81.51940155029296875
+HTN,5,2019-06-06 16:15:59,2019-06-06 16:16:58,Lucretia,Wagner,lucretiawagner@gmail.com,0,23,0,58,,
