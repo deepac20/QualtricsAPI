@@ -6,7 +6,6 @@ import io
 import os
 import shutil
 
-
 class DataExtract:
     path = ''
     coachman_surveyId = {}
@@ -37,14 +36,20 @@ class DataExtract:
         self.apiToken = raw_input('Enter token: ')
         self.fileFormat = 'csv'
         self.dataCenter = 'cwru.az1'
+        self.p = self.path+"/Patient Reminder"
+        if os.path.exists(self.p):
+            shutil.rmtree(self.p)
+            os.mkdir(self.p)
+            os.mkdir(self.p+"/MyQualtricsDownload")
+        else:
+            os.mkdir(self.p)
+            os.mkdir(self.p + "/MyQualtricsDownload")
+        self.p=self.p+"/MyQualtricsDownload"
         self.filedownload(self.techsupport_surveyId,'TechSupport')
         self.filedownload(self.coachman_surveyId,'Coachman')
 
     def filedownload(self, survey, study):
-        dest_path = self.path + "/MyQualtricsDownload/" + study
-        if os.path.exists(dest_path):
-            shutil.rmtree(dest_path)
-        os.mkdir(dest_path)
+        dest_path = self.p +"/" +study
         for surveyId, group in survey.items():
             # Setting static parameters
             requestCheckProgress = 0.0

@@ -86,7 +86,7 @@ class CleanData:
         log = [[]]
         data = pd.read_csv("Cleaned.csv")
         for email in set(data['RecipientEmail']):
-            temp = [None] * 2
+            temp = [None] * 4
             completed_module = []
             subset = data.loc[data['RecipientEmail'] == email]
             pname = str(subset['RecipientFirstName']).split()[1] + " " + str(subset['RecipientLastName']).split()[1]
@@ -97,13 +97,18 @@ class CleanData:
             completed_module = set(completed_module)
             incomplete_modules = list(set(all_modules) - set(completed_module))
             temp[0] = pname
+            temp[1] = study
+            temp[2] = group
             if len(incomplete_modules) == 0:
-                temp[1] = "None"
+                temp[3] = "None"
             else:
-                temp[1] = incomplete_modules
-            log.append(temp)
+                temp[3] = incomplete_modules
+            if len(log) == 0:
+                log[0]=temp
+            else:
+                log.append(temp)
         out = pd.DataFrame(log)
-        out.columns = ['Patient Name', 'Incomplete Modules']
+        out.columns = ['Patient Name', 'Study','Group', 'Incomplete Modules']
         print(out)
-        dest = self.path + "/{}_{}".format(study, group) + ".csv"
+        dest = self.path + "/Patient Reminder/{}_{}".format(study, group) + ".csv"
         out.to_csv(dest, index=False)
