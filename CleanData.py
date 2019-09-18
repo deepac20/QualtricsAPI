@@ -78,11 +78,15 @@ class CleanData:
         new_data.to_csv("Cleaned.csv", index=False)
 
     def get_id(self, study, group):
-        if group == 'Intervention':
+        if group == 'Intervention' and study == 'TechSupport':
             all_modules = ['HTN 1', 'HTN 2', 'HTN 3', 'HTN 4', 'HTN 5', 'HTN 6', 'PPT 1', 'PPT 2', 'PPT 3', 'PPT 4',
                            'PPT 5', 'PPT 6', ]
-        else:
+        elif group == 'Intervention' and study == 'Coachman':
             all_modules = ['HTN 1', 'HTN 2', 'HTN 3', 'HTN 4', 'HTN 5', 'HTN 6']
+        elif group == 'Controlled' and study == 'TechSupport':
+            all_modules = ['HTN 1', 'HTN 2', 'HTN 3', 'HTN 4', 'HTN 5', 'HTN 6']
+        else:
+            all_modules = ['HTN 2']
         log = [[]]
         data = pd.read_csv("Cleaned.csv")
         for email in set(data['RecipientEmail']):
